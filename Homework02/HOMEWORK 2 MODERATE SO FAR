@@ -1,0 +1,78 @@
+HOMEWORK 2 MODERATE SO FAR
+
+Sub Moderate()
+
+  'HEADERS: Ticker & Total Stock Volume
+      ' Defining Variables for Headers
+          Dim TotalStockVolume As Double
+          Dim YearlyChange As Double
+          Dim PercentChange As Double
+          Dim Ticker As String
+
+      ' Begin Loop through all worksheets
+          Application.ScreenUpdating = False
+          For Each sh In Worksheets
+              sh.Activate
+
+      ' Set Total Stock Volume variable at 0
+          TotalStockVolume = 0
+
+      ' Adding Headers to Excel File
+          Range("I1").Value = "Ticker"
+          Range("J1").Value = "Yearly Change"
+          Range("K1").Value = "Percent Change"
+          Range("L1").Value = "Total Stock Volume"
+
+
+  'DISPLAY TICKER IN COLUMN I
+      ' Keep track of the location for each Ticker in the Summary Table
+          Dim Summary_Table_Row As Integer
+          Summary_Table_Row = 2
+
+      ' Figure out last row in Ticker column
+          RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+
+      ' Loop through all Tickers
+          For i = 2 To RowCount
+
+         ' Loop through the columns
+              For j = 7 To 7
+
+         ' Check if we are still within the same Ticker
+              If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+
+              ' If it is not THEN...
+              ' Set the Ticker name
+                  Ticker = Cells(i, 1).Value
+
+              ' Add to the Total Stock Volume
+                  TotalStockVolume = TotalStockVolume + Cells(i, j).Value
+
+              ' Print the Ticker in the Summary Table
+                  Range("I" & Summary_Table_Row).Value = Ticker
+
+              ' Print the Total Stock Volume to the Summary Table
+                  Range("L" & Summary_Table_Row).Value = TotalStockVolume
+
+              ' Add one to the Summary Table Row
+                  Summary_Table_Row = Summary_Table_Row + 1
+
+              ' Set Total Stock Volume back to 0 for Sum finding
+                  TotalStockVolume = 0
+
+              Else
+
+        ' Add to the Total Stock Volume
+          TotalStockVolume = TotalStockVolume + Cells(i, j).Value
+
+          End If
+
+          Next j
+
+         Next i
+
+  ' Cycle through next worksheet
+        Next sh
+        Application.ScreenUpdating = True
+
+End Sub

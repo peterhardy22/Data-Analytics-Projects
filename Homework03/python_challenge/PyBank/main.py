@@ -10,6 +10,13 @@ print("----------------------------")
 # Gain a path into our csv file
 csvpath = os.path.join('budget_data.csv')
 
+# Create variables for finding greatest increase and decrease
+max_profit = 0
+min_profit = 10000000
+date_max = ""
+date_min = ""
+ 
+
 # Reading csv file
 with open(csvpath, 'r') as csv_file:
     # Creating a csv reader object
@@ -25,6 +32,22 @@ with open(csvpath, 'r') as csv_file:
         month = row[0]
         # Add each month to months list
         months.append(month)
+        # Create variable to make csv index an integer to use greater/less than
+        profit = int(row[1]) 
+        # Check if this row is greater than the max
+        if profit > max_profit:
+            # If it is greater, then save it to max_profit
+            max_profit = profit
+            # Also grab date_max
+            date_max = row[0]
+
+        # Check if this row is less than the min
+        if profit < min_profit:
+            # If it is less than, then save it to min_profit
+            min_profit = profit
+            # Also grab the date_min
+            date_min = row[0]
+
     # Find the sum of how many months are in the months list
     SumOfMonths = (len(months))
     # Print total months in data set
@@ -83,8 +106,6 @@ with open(csvpath, 'r') as csv_file:
     print(f"Average Change: ${AverageChange}")
 
 
-# pybank = []
-
 # Reading csv file
 with open(csvpath, 'r') as csv_file:
     # Creating a csv reader object
@@ -94,19 +115,11 @@ with open(csvpath, 'r') as csv_file:
 
     
 # Greatest increase in profits (date and month) over entire period
-
-   # for line in csv_reader:
-       # pybank.append(f"{line[0]} {line[1]}")
-
-        #print(f"{statistics.mode(pybank[1])}")
-
-    print(f"Greatest Increase in Profits: (${max(changes)})")
+    print(f"Greatest Increase in Profits: {date_max} (${max(changes)})")
 
 
-
-    # Greatest decrease in profits (date and month) over entire period
-
-    print(f"Greatest Decrease in Profits: (${min(changes)})")
+# Greatest decrease in profits (date and month) over entire period
+    print(f"Greatest Decrease in Profits: {date_min} (${min(changes)})")
 
 
     # OCD extra space for viewing output :)

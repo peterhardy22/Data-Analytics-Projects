@@ -1,17 +1,11 @@
 # Pittsburgh Crime Analysis
 
 Scope of Analysis: 
-
 We will be collecting data on Pittsburgh Crime (2016-2019) and how it relates to:
-
 -Weather (rain, snow, sunny, when is there more crime?)
-
 -Crime frequency vs Incident location (which parts of Pittsburgh have the highest crime rates? Does location matter?)
-
 -Analyzing the relationship between how severe a crime is and where it happens (do more severe crimes happen in the same    location(s), crime frequency in city zones vs police zones, which zones are “safer”? is there a pattern?)
-
 -Crime vs time (time of day, time of the week, time of the year, we want to recognize when these crimes are actually happening).
-
 -What percentage of each age group is responsible for crimes in Pittsburgh (what about gender or race?)
 
 Resources

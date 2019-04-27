@@ -16,6 +16,10 @@ Table of Contents
 
 	07 - Pittsburgh Crime Analysis
 
-	08 - Sakila
+	08 - Sakila Search
+		
+	Coming soon...
+	
+	09 - Hawaii Trip With Flask
 
 Enjoy!

@@ -17,9 +17,11 @@ Table of Contents
 	07 - Pittsburgh Crime Analysis
 
 	08 - Sakila Search
-		
-	Coming soon...
 	
 	09 - Hawaii Trip With Flask
+	
+	Coming soon...
+	
+	10 - Web of Weather
 
 Enjoy!

@@ -1,6 +1,6 @@
 # Data Analytics Projects
 
-Table of Contents
+##Table of Contents
 
 	01 - Kickstarter Challenge
 
@@ -20,8 +20,12 @@ Table of Contents
 	
 	09 - Hawaii Trip With Flask
 	
+	11 - Collecting Contemporary Artists
+	
 	Coming soon...
 	
 	10 - Web of Weather
+	
+	12 - Scraping a Mission to Mars
 
 Enjoy!

@@ -2,7 +2,9 @@
 
 ## Table of Contents
 
+
 ⋅⋅⋅[01 - Kickstarter Challenge](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/01%20-%20Kickstarter%20Challenge)
+
 
 ⋅⋅⋅[02 - The VBA of Wall Street](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/02%20-%20The%20VBA%20of%20Wall%20Street)
 
@@ -32,3 +34,6 @@ Coming soon...
 
 ***
 Enjoy!
+
+
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).

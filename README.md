@@ -2,9 +2,8 @@
 
 ## Table of Contents
 
-	01 - Kickstarter Challenge
+	[01 - Kickstarter Challenge](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/01%20-%20Kickstarter%20Challenge)
 
-	02 - The VBA of Wall Street
 
 	03 - PyBank & PyPoll
 

@@ -21,6 +21,8 @@
 [09 - Hawaii Trip With Flask](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/09%20-%20Hawaii%20Trip%20With%20Flask)
 	
 [11 - Collecting Contemporary Artists](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/11%20-%20Collecting%20Contemporary%20Artists)
+
+***
 	
 Coming soon...
 	
@@ -28,5 +30,5 @@ Coming soon...
 	
 12 - Scraping a Mission to Mars
 
-
+***
 Enjoy!

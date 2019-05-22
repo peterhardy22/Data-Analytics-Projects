@@ -22,10 +22,11 @@
 	
 [11 - Collecting Contemporary Artists](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/11%20-%20Collecting%20Contemporary%20Artists)
 	
-	Coming soon...
+Coming soon...
 	
-	10 - Web of Weather
+10 - Web of Weather
 	
-	12 - Scraping a Mission to Mars
+12 - Scraping a Mission to Mars
+
 
 Enjoy!

@@ -3,10 +3,10 @@
 ## Table of Contents
 
 
-&nbsp;[01 - Kickstarter Challenge](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/01%20-%20Kickstarter%20Challenge)
+&nbsp;&nbsp;&nbsp;[01 - Kickstarter Challenge](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/01%20-%20Kickstarter%20Challenge)
 
 
-⋅⋅⋅[02 - The VBA of Wall Street](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/02%20-%20The%20VBA%20of%20Wall%20Street)
+&nbsp;&nbsp;&nbsp;[02 - The VBA of Wall Street](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/02%20-%20The%20VBA%20of%20Wall%20Street)
 
 ⋅⋅⋅[03 - PyBank & PyPoll](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/03%20-%20PyBank%20%26%20PyPoll)
 

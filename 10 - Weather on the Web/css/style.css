@@ -1,0 +1,118 @@
+body {
+  background: rgb(202, 202, 202);
+}
+
+header {
+  background-color: white;
+}
+
+header .navbar-brand{
+  background-color: rgb(45, 212, 198);
+  padding: 10px 10px;
+  color: white;
+  box-sizing: border-box;
+}
+
+header .nav-item{
+  text-decoration-color: rgb(151, 151, 151);
+  padding: 0.9em;
+}
+
+h3 {
+  color: #2dd4c6;
+  border-bottom:1px solid #CCC;
+  padding-bottom:3px;
+  cursor: default;
+}
+
+h2 {
+  color: rgb(45, 212, 198);
+  border-bottom:1px solid #CCC;
+  padding-bottom:15px;
+  cursor: default;
+
+}
+
+h4 {
+  color: rgb(45, 212, 198);
+  text-align: center;
+  cursor: default;
+}
+
+p {
+  padding: 0.9em;
+  cursor: default;
+}
+
+.jumbotron {
+  background-color: transparent; 
+  align-items: center;
+}
+
+.navbar-nav li:hover{
+  background: rgb(151, 151, 151)
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background: white;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ }
+ 
+ .dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ }
+ 
+ .dropdown-content a:hover{
+  background: rgb(151, 151, 151);
+ }
+ 
+ .dropdown:hover .dropdown-content{
+  display: block;
+ }
+ 
+ .navbar {
+	margin-bottom: 30px;
+  position: relative;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+}
+
+img {
+  text-align: center;
+}
+
+.container {
+  padding: -200px -160px;
+}
+.card {
+  border-radius: 0;
+}
+.card-text {
+  padding: .25rem;
+}
+
+@media screen and (min-width: 768px){
+  .navbar-toggler .navbar-toggler-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgb(151, 151, 151);
+    font-size: 24px;
+  }
+
+}

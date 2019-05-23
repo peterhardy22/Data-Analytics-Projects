@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Awesome Fonts - Media Symbols-->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Stylish" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- NavBar -->
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <strong>Home</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <div class="dropdown">
+                        <a style= "color:rgba(0,0,0,0.6)" class="nav-link">Plots</a>
+                        <div class="dropdown-content">
+                            <a style= "color:rgba(0,0,0,0.6)" href="../src/max_temp.html">Max Temperature</a>
+                            <a style= "color:rgba(0,0,0,0.6)" href="../src/humidity.html">Humidity</a>
+                            <a style= "color:rgba(0,0,0,0.6)" href="../src/cloudiness.html">Cloudiness</a>
+                            <a style= "color:rgba(0,0,0,0.6)" href="../src/wind_speed.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style= "color:rgba(0, 0, 0, 0.6)" href="../src/comparison.html">Comparison<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" style= "color:rgba(0,0,0,0.6)" href="../src/data.html">Data<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+      <!-- Main Front Page Content -->
+    <div class="container">
+
+      <div class="jumbotron">
+
+        <div class="row">
+
+          <div class="col-7">
+
+            <div class="card w-60">
+              <h3>Latitude vs. X:</h3>
+              <div class="row">
+                <div class="col-6">
+                  <img src="../assests/globe.png" class="card-img-top" alt="lat vs max temp pic">
+                </div>
+                <div class="col-6">
+                  <p class="card-text text-black lead">This project was conducted to see if we could find a relationship
+                    between a cities latitude and its weather patterns. Using <a href="https://openweathermap.org/api" style="color:#2dd4c6">OpenWeatherMap API</a> to collect data from 543 cities,
+                    I was able to retrieve multiple variables to test this theory with. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="card-text text-black lead mb-5">Then Pandas was used to organize said weather data, and Matplotlib was used at the end to visualize the data. 
+                    This webpage acts as a window into the research I have conducted.
+                    On the following pages you will find visualizations as well as all the data used to complete this project. Enjoy!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-5">
+
+            <div class="card w-40">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2><a href="../src/comparison.html" style="color:#2dd4c6">Visualizations</a></h2>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="../src/max_temp.html"><img class="img img-responsive" src="../assests/city_lat_max_temp.png" 
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Temperature"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="../src/humidity.html"> <img class= "img img-responsive" src="../assests/city_lat_hum.png" 
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Humidity"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="../src/cloudiness.html"> <img class="img img-responsive" src="../assests/city_lat_cloudiness.png"
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Cloudiness"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="../src/wind_speed.html""> <img class="img img-responsive" src="../assests/city_lat_wind_speed.png"
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Wind Speed"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                  </div>
+                
+                
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      <div class="container">
+          <div class= "row">
+            <div class="col-12">
+              <footer>
+                <div class="footer">Copyright &copy; Peter Hardy 2019.</div>
+              </footer>
+            </div>
+          </div>
+        </div>
+  </main>      
+</body>
+
+</html>
+

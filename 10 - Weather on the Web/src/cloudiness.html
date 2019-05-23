@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Plot: Cloudiness</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Awesome Fonts - Media Symbols-->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Stylish" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- NavBar -->
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+          <strong>Home</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                  <div class="dropdown">
+                    <a style= "color:rgba(0,0,0,0.6)" class="nav-link">Plots</a>
+                    <div class="dropdown-content">
+                      <a style= "color:rgba(0,0,0,0.6)" href="../src/max_temp.html">Max Temperature</a>
+                      <a style= "color:rgba(0,0,0,0.6)" href="../src/humidity.html">Humidity</a>
+                      <a style= "color:rgba(0,0,0,0.6)" href="../src/cloudiness.html">Cloudiness</a>
+                      <a style= "color:rgba(0,0,0,0.6)" href="../src/wind_speed.html">Wind Speed</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" style= "color:rgba(0, 0, 0, 0.6)" href="../src/comparison.html">Comparison<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" style= "color:rgba(0,0,0,0.6)" href="../src/data.html">Data<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-12">
+         <h2>City Latitude Vs. Cloudiness</h2>
+         <p class="card-text text-black lead mb-5">The following table demonstrates how cloudiness is effected based on city latitude.</p>
+         <img src="../assests/city_lat_cloudiness.png" class="card-img-top" alt="cloudy" width="300px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class= "row">
+      <div class="col-12">
+        <footer>
+          <div class="footer">Copyright &copy; Peter Hardy 2019.</div>
+        </footer>
+      </div>
+    </div>
+  </div>
+      
+</body>
+
+</html>
+

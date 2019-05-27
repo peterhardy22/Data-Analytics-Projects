@@ -136,7 +136,7 @@ def scrape():
   "mars_weather": mars_weather,
   "facts_table": facts_table,
   "hemisphere_image_urls": hemisphere_image_urls
- }
+ }  
 
 
  # Quit chromedriver

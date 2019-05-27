@@ -58,78 +58,83 @@
       <!-- Main Front Page Content -->
     <div class="container">
 
-      <div class="row">
+      <div class="jumbotron">
 
-        <div class="col-md-8 col-sm-12">
-          <div class="card">
-            <div class="card-block">
-              <div class="card-title">
-                <h3>Latitude vs. X:</h3>
-              </div>
-              <div class="card-text">
-                <div class="row">
-                  <div class="col-md-6 col-sm-3">
-                    <img src="../assests/globe.png" class="card-img-top" alt="lat vs max temp pic">
-                  </div>
-                  <div class="col-md-6 col-sm-9">
-                    <p class="card-text text-black lead">This project was conducted to see if we could find a relationship
-                      between a cities latitude and its weather patterns. Using <a href="https://openweathermap.org/api" style="color:#2dd4c6">OpenWeatherMap API</a> to collect data from 543 cities,
-                      I was able to retrieve multiple variables to test this theory with. 
-                    </p>
-                  </div>
+        <div class="row">
+
+          <div class="col-7">
+
+            <div class="card w-60">
+              <h3>Latitude vs. X:</h3>
+              <div class="row">
+                <div class="col-6">
+                  <img src="../assests/globe.png" class="card-img-top" alt="lat vs max temp pic">
                 </div>
-                <div class="row">
-                  <div class="col-md-12 col-sm-12">
-                    <p class="card-text text-black lead mb-5">Then Pandas was used to organize said weather data, and Matplotlib was used at the end to visualize the data. 
-                      This webpage acts as a window into the research I have conducted.
-                      On the following pages you will find visualizations as well as all the data used to complete this project. Enjoy!
-                    </p>
-                  </div>
+                <div class="col-6">
+                  <p class="card-text text-black lead">This project was conducted to see if we could find a relationship
+                    between a cities latitude and its weather patterns. Using <a href="https://openweathermap.org/api" style="color:#2dd4c6">OpenWeatherMap API</a> to collect data from 543 cities,
+                    I was able to retrieve multiple variables to test this theory with. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <p class="card-text text-black lead mb-5">Then Pandas was used to organize said weather data, and Matplotlib was used at the end to visualize the data. 
+                    This webpage acts as a window into the research I have conducted.
+                    On the following pages you will find visualizations as well as all the data used to complete this project. Enjoy!
+                  </p>
                 </div>
               </div>
             </div>
+
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12" >
-          <div class="card">
-            <div class="card-block">
-              <div class="card-title">
-                <h2><a href="../src/comparison.html" style="color:#2dd4c6">Visualizations</a></h2>
-              </div>
-              <div class="card-text">
-                <div class="row justify-content-center">
-                  <div class="col-6">
-                    <a href="../src/max_temp.html"><img class="img img-responsive" src="../assests/city_lat_max_temp.png" 
-                    width="200px" height="200px" alt="temp" title= "City Latitude Vs Temperature"
-                    style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+
+          <div class="col-5">
+
+            <div class="card w-40">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2><a href="../src/comparison.html" style="color:#2dd4c6">Visualizations</a></h2>
+                    </div>
                   </div>
-                  <div class="col-6">
-                    <a href="../src/humidity.html"> <img class= "img img-responsive" src="../assests/city_lat_hum.png" 
-                    width="200px" height="200px" alt="temp" title= "City Latitude Vs Humidity"
-                    style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                  
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="../src/max_temp.html"><img class="img img-responsive" src="../assests/city_lat_max_temp.png" 
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Temperature"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="../src/humidity.html"> <img class= "img img-responsive" src="../assests/city_lat_hum.png" 
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Humidity"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
                   </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-6">
-                    <a href="../src/cloudiness.html"> <img class="img img-responsive" src="../assests/city_lat_cloudiness.png"
-                    width="200px" height="200px" alt="temp" title= "City Latitude Vs Cloudiness"
-                    style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="../src/cloudiness.html"> <img class="img img-responsive" src="../assests/city_lat_cloudiness.png"
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Cloudiness"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="../src/wind_speed.html""> <img class="img img-responsive" src="../assests/city_lat_wind_speed.png"
+                      width="200px" height="200px" alt="temp" title= "City Latitude Vs Wind Speed"
+                      style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
+                    </div>
                   </div>
-                  <div class="col-6">
-                    <a href="../src/wind_speed.html""> <img class="img img-responsive" src="../assests/city_lat_wind_speed.png"
-                    width="200px" height="200px" alt="temp" title= "City Latitude Vs Wind Speed"
-                    style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
-                  </div>
-                </div>
-              </div>
+                
+                
             </div>
+
+
+
           </div>
 
         </div>
-      
+
       </div>
-    
-    </div>
       
       <div class="container">
           <div class= "row">

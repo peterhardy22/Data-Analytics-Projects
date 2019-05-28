@@ -16,16 +16,17 @@ body {
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
+  background: #000000;
 }
 
 /* The footer is positioned at the bottom of the page */
 .footer {
-  position: absolute;
+  text-align: center;
   right: 0;
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #4e5d6c;
+  background: #000000;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -35,12 +36,13 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #000000;
 }
 
 .navbar {
   padding: 5px;
   margin: 0;
+  background: #000000;
 }
 
 /* This CSS styles the ufo icon in the navbar */
@@ -49,16 +51,17 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
 }
 
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
+  
 }
 
 .filters .panel-body {
   padding: 0;
+  background: black;
 }
 
 .filters {
@@ -94,13 +97,13 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 550px;
+  height: 750px;
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/alien.jpg");
   background-attachment: fixed;
-  background-position: bottom center;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -111,10 +114,11 @@ select {
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 4rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  color:  #ffffffcb;
 }
 
 /* input placeholder color changes */

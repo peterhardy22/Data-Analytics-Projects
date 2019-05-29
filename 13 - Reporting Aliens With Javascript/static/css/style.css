@@ -10,6 +10,28 @@ body {
   margin: 0;
 }
 
+table, th, td {
+  border: 1px solid whitesmoke;
+  height: 30px;
+}
+
+.table-head {
+  border: 1px solid whitesmoke;
+}
+
+th {
+  height: 30px;
+}
+
+td {
+  padding: 9px;
+  text-align: left;
+}
+
+tbody.capitalize {
+  text-transform: capitalize;
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
@@ -56,7 +78,6 @@ body {
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
-  
 }
 
 .filters .panel-body {
@@ -84,6 +105,10 @@ select {
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
+}
+
+.tbody {
+
 }
 
 .loader {
@@ -157,7 +182,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #000000;
   }
 
   #table-area tr td:last-child {

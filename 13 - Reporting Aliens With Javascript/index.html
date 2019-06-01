@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>UFO Finder</title>
+  <title>UFO Sightings</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -15,9 +15,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
-          </a>
+          <a class="navbar-brand" href="index.html">" What's that in the sky ?! "</a>
         </div>
       </div>
     </nav>
@@ -30,26 +28,25 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading text-center">Filter Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group text-center">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
+                        <label for="date" id="filterInput">Enter a Date</label>
                         <input class="form-control text-center" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default center-block">Filter Table</button>
+                  <button id="filter-btn" type="submit" class="btn btn-default center-block" onclick="filterSelection('datetime')">Filter Table</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
         <div class="col-md-10">
-          <div id="table-area">
-            <table id="ufo-table" class="table table-striped">
+          <div id="table-area" class="table table-striped">
+            <table id="ufo-table">
               <thead class="thead-light">
                 <tr>
                   <th class="table-head">Date</th>

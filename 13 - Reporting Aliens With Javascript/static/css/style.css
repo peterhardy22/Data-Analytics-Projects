@@ -26,12 +26,14 @@ th {
 td {
   padding: 9px;
   text-align: left;
-}
-
-tbody.capitalize {
   text-transform: capitalize;
+
 }
 
+
+.table .table {
+  background-color: #000000;
+}
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
@@ -44,6 +46,7 @@ tbody.capitalize {
 /* The footer is positioned at the bottom of the page */
 .footer {
   text-align: center;
+  color: #9ccab7;
   right: 0;
   bottom: 0;
   left: 0;
@@ -66,15 +69,15 @@ tbody.capitalize {
   margin: 0;
   background: #000000;
 }
-
-/* This CSS styles the ufo icon in the navbar */
-.nav-ufo {
-  position: absolute;
-  bottom: 5px;
-  left: 150px;
-  width: 35px;
+.navbar-brand {
+  text-align: center;
+  font-size: 19px;
+  line-height: 21px;
+  height: 40px;
 }
-
+.navbar>.container-fluid .navbar-brand {
+  text-align: center;
+}
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
@@ -82,7 +85,25 @@ tbody.capitalize {
 
 .filters .panel-body {
   padding: 0;
-  background: black;
+  background-color: black;
+}
+
+.panel-default>.panel-heading {
+  background-color: black;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  background-position: 10px 12px;
+  padding: 13px;
+  margin-bottom: -1px;
+  background-color: #000000;
+  border: 1px solid transparent;
+}
+.btn-default {
+  color: #f5f8ed;
+  background-color: #9ccab7;
+  border-color: #f5f8ed;
 }
 
 .filters {
@@ -122,7 +143,7 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 750px;
+  height: 460px;
   padding: 20px;
   margin: 0;
   background: black;
@@ -133,17 +154,20 @@ select {
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-top: 150px;
   font-size: 0.1rem;
+  text-shadow: 1px 1px 15px #000;
   animation: title 1.2s forwards linear;
+  color: whitesmoke;
 }
 
 .hero p {
   font-size: 4rem;
+  text-shadow: 1px 1px 15px #000;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
-  color:  #ffffffcb;
+  color: white;
 }
 
 /* input placeholder color changes */
@@ -218,6 +242,7 @@ select {
   .hero h1 {
     animation: smaller-title 1.2s forwards linear;
   }
+  
 }
 
 /* keyframe animations which will be used to animate the title */

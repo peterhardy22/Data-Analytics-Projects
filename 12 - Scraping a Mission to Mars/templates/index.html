@@ -9,29 +9,26 @@
 
   <div class="row">
     <div class="col-9 col-md-8">Latest Mars News</div>
-    <p>{{mars_data.news_title}}</p>
-    <p>{{mars_data.news_p}}</p>
+    <p>{{ marsdata.mars_data.news_title }}</p>
+    <p>{{ marsdata.mars_data.news_p }}</p>
   </div>
   
   
   <div class="row">
     <div class="col-9 col-md-8">Featured Mars Image</div>
-    <img src={{mars_data.featured_image_url}} alt="featured_mars_image">
+    <img src={{marsdata.mars_data.featured_image_url}} alt="featured_mars_image">
     <div class="col-3 col-md-4">
       <div class="card" style="width:400px">
         <div class="card-body">
           <h4 class="card-title">Current Weather on Mars</h4>
-          <p class="card-text">{{mars_data.mars_weather}}</p>
+          <p class="card-text">{{ marsdata.mars_data.mars_weather }}</p>
         </div>
         <div class="card-body">
           <h4 class="card-title">Mars Facts</h4>
-          <p class="card-text">{{mars_data.facts_table}}</p>
+          <p class="card-text">{{ marsdata.mars_data.facts_table }}</p>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
 {% endblock %}

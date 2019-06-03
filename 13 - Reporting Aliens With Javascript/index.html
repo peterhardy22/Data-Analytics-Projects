@@ -11,7 +11,9 @@
 </head>
 
 <body>
+  
   <div class="wrapper">
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -19,11 +21,14 @@
         </div>
       </div>
     </nav>
+
     <div class="hero text-center">
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There Man</p>
     </div>
+
     <div class="container">
+
       <div class="row margin-top-50">
         <div class="col-md-2">
           <aside class="filters">
@@ -33,21 +38,23 @@
                   <div class="form-group text-center">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date" id="filterInput">Enter a Date</label>
-                        <input class="form-control text-center" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control text-center" id="datetime" type="text" placeholder="1/1/2010">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default center-block" onclick="filterSelection('datetime')">Filter Table</button>
+                  <button id="submit" type="submit" class="btn btn-default center-block" ">Filter Table</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
+
         <div class="col-md-10">
-          <div id="table-area" class="table table-striped">
-            <table id="ufo-table">
-              <thead class="thead-light">
+          <!-- TABLE -->
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
                 <tr>
                   <th class="table-head">Date</th>
                   <th class="table-head">City</th>
@@ -58,9 +65,11 @@
                   <th class="table-head">Comments</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody class="summary" id="summary">
+              </tbody>
             </table>
           </div>
+          <!-- END TABLE -->
         </div>
       </div>
     </div>
@@ -69,6 +78,9 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
 </body>

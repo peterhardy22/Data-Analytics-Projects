@@ -2,7 +2,9 @@
   box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
 }
-
+html {
+  background-color: #000;
+}
 html,
 body {
   height: 100%;
@@ -15,8 +17,13 @@ table, th, td {
   height: 30px;
 }
 
+table {
+  border-collapse: collapse;
+}
 .table-head {
   border: 1px solid whitesmoke;
+  padding: 10px;
+  text-transform: uppercase;
 }
 
 th {
@@ -26,10 +33,13 @@ th {
 td {
   padding: 9px;
   text-align: left;
-  text-transform: capitalize;
-
+  text-transform: uppercase;
+  font-family: monospace;
 }
 
+.table {
+  padding-bottom: 0px;
+}
 
 .table .table {
   background-color: #000000;
@@ -128,8 +138,15 @@ select {
   min-width: 70px;
 }
 
-.tbody {
-
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
 .loader {
@@ -143,7 +160,7 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 460px;
+  height: 600px;
   padding: 20px;
   margin: 0;
   background: black;

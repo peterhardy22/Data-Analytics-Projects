@@ -30,7 +30,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * [UFO data](https://github.com/peterhardy22/Data-Analytics-Projects/blob/master/13%20-%20Reporting%20Aliens%20With%20Javascript/static/js/data.js)
 
-
+***
 # Still under construction...
 ### Level 2: Multiple Search Categories (Optional)
 
@@ -43,5 +43,3 @@ You can handle this... right? The planet Earth needs to know what we have found!
   3. `state`
   4. `country`
   5. `shape`
-
-- - -

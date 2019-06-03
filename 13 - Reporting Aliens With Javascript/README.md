@@ -25,7 +25,13 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `datetime` column to find rows that match user input.
 
-#### Still under construction...
+
+### Dataset
+
+* [UFO data](https://github.com/peterhardy22/Data-Analytics-Projects/blob/master/13%20-%20Reporting%20Aliens%20With%20Javascript/static/js/data.js)
+
+
+# Still under construction...
 ### Level 2: Multiple Search Categories (Optional)
 
 * Complete all of Level 1 criteria.
@@ -39,7 +45,3 @@ You can handle this... right? The planet Earth needs to know what we have found!
   5. `shape`
 
 - - -
-
-### Dataset
-
-* [UFO data](https://github.com/peterhardy22/Data-Analytics-Projects/blob/master/13%20-%20Reporting%20Aliens%20With%20Javascript/static/js/data.js)

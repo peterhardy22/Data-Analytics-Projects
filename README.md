@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://images.techhive.com/images/article/2016/07/big_data_analytics_research_chart_growth_thinkstock_516976188-100673341-medium.idge.jpg" width="750" align="middle">
+  <img src="https://images.techhive.com/images/article/2016/07/big_data_analytics_research_chart_growth_thinkstock_516976188-100673341-medium.idge.jpg" width="500" align="middle">
 </p>
 
 

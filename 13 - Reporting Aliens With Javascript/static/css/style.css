@@ -19,6 +19,7 @@ table, th, td {
 
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 .table-head {
   border: 1px solid whitesmoke;
@@ -76,17 +77,20 @@ td {
 
 .navbar {
   padding: 5px;
-  margin: 0;
   background: #000000;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .navbar-brand {
   text-align: center;
-  font-size: 19px;
-  line-height: 21px;
-  height: 40px;
 }
 .navbar>.container-fluid .navbar-brand {
   text-align: center;
+  
 }
 /* Adding styles to the aside and filter form */
 .ufo-form {

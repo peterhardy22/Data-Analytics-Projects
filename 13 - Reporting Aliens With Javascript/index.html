@@ -38,20 +38,18 @@
                   <div class="form-group text-center">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item padding">
-                        <label class="padding" for="date">Enter Single Search Item</label>
-                        <input class="form-control text-center" id="datetime" type="text" placeholder="1/1/2010">
+                        <label class="padding" for="date">Enter Search Item</label>
+                        <input class="form-control text-center" id="input" type="text" placeholder="">
                       </li>
                       <li class="filter list-group-item">
-                        <input class="form-control text-center" id="city" type="text" placeholder="Benton">
-                      </li>
-                      <li class="filter list-group-item">
-                        <input class="form-control text-center" id="state" type="text" placeholder="AR">
-                      </li>
-                      <li class="filter list-group-item">
-                        <input class="form-control text-center" id="country" type="text" placeholder="US">
-                      </li>
-                      <li class="filter list-group-item">
-                        <input class="form-control text-center" id="shape" type="text" placeholder="Circle">
+                        <label for="search_selector">Select Category</label>
+                        <select class="custom_select" id="search_selector">
+                          <option selected value="datetime">Date</option>
+                          <option value="city">City</option>
+                          <option value="state">State</option>
+                          <option value="country">Country</option>
+                          <option value="shape">Shape</option>
+                        </select>
                       </li>
                     </ul>
                   </div>

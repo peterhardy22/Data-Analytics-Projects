@@ -45,6 +45,15 @@ td {
 .table .table {
   background-color: #000000;
 }
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: whitesmoke;
+  outline: none;
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
@@ -87,6 +96,7 @@ td {
 }
 .navbar-brand {
   text-align: center;
+  text-decoration-color: #f5f8ed;
 }
 .navbar>.container-fluid .navbar-brand {
   text-align: center;

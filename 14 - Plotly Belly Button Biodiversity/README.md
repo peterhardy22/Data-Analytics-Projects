@@ -1,6 +1,6 @@
 # Belly Button Biodiversity
 
-![Bacteria by filterforge.com](https://github.com/berkeleybootcamp/classActivities/blob/master/02-Homework/15-Interactive-Visualizations-and-Dashboards/Instructions/Images/bacteria_by_filterforgedotcom.jpg?raw=true)
+![Bacteria by filterforge.com](https://github.com/berkeleybootcamp/classActivities/blob/master/02-Homework/15-Interactive-Visualizations-and-Dashboards/Instructions/Images/bacteria_by_filterforgedotcom.jpg?raw=true width="500" align="middle")
 
 This project builds an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 

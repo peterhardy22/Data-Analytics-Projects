@@ -53,7 +53,7 @@ def names():
 def sample_metadata(sample):
     """Return the MetaData for a given sample."""
     sel = [
-        Samples_Metadata.sample,
+        Samples_Metadata.SAMPLE,
         Samples_Metadata.ETHNICITY,
         Samples_Metadata.GENDER,
         Samples_Metadata.AGE,
@@ -67,7 +67,7 @@ def sample_metadata(sample):
     # Create a dictionary entry for each row of metadata information
     sample_metadata = {}
     for result in results:
-        sample_metadata["sample"] = result[0]
+        sample_metadata["SAMPLE"] = result[0]
         sample_metadata["ETHNICITY"] = result[1]
         sample_metadata["GENDER"] = result[2]
         sample_metadata["AGE"] = result[3]
@@ -81,7 +81,7 @@ def sample_metadata(sample):
 
 @app.route("/samples/<sample>")
 def samples(sample):
-    """Return `otu_ids`, `otu_labels`,and `sample_values`."""
+    """Return `otu_ids`, `otu_labels`, and `sample_values`."""
     stmt = db.session.query(Samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 

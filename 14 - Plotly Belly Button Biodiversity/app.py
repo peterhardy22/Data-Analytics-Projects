@@ -53,7 +53,7 @@ def names():
 def sample_metadata(sample):
     """Return the MetaData for a given sample."""
     sel = [
-        Samples_Metadata.SAMPLE,
+        Samples_Metadata.sample,
         Samples_Metadata.ETHNICITY,
         Samples_Metadata.GENDER,
         Samples_Metadata.AGE,
@@ -95,6 +95,11 @@ def samples(sample):
         "otu_labels": sample_data.otu_label.tolist(),
     }
     return jsonify(data)
+
+
+# @app.route("/wfreq/<sample>")
+# def wash_freq(sample):
+#     """Return ."""
 
 
 if __name__ == "__main__":

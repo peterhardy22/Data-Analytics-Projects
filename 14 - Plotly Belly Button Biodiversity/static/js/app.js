@@ -11,8 +11,6 @@ function buildMetadata(sample_metadata) {
     Object.entries(data).forEach(([key, value]) => {
       panel.append('h6').text(`${key}: ${value}`);
     });
-    // BONUS: Build the Gauge Chart
-    // buildGauge(data.WFREQ);
   })
 }
 
@@ -34,7 +32,7 @@ function buildCharts(sample_metadata) {
       x: otu_ids,
       // y-axis values
       y: sample_values,
-
+      // shows otu_labels over each bubble
       text: otu_labels,
       // values show as markers on plot
       mode: 'markers',
@@ -50,7 +48,9 @@ function buildCharts(sample_metadata) {
     }];      
     // Layout for bubble chart
     var bubbleLayout = {
+      // sets top margin
       margin: { t: 0 },
+      // shows text closest to actual point
       hovermode: 'closest',
       // place title for plot under x-axis
       xaxis: {title: 'OTU ID'}
@@ -60,80 +60,23 @@ function buildCharts(sample_metadata) {
 
     // Build a Pie Chart using the sample data
     var pieData = [{
+      // grabs top ten sample_values for values
       values: sample_values.slice(0,10),
+      // grabs top ten otu_ids for labels
       labels: otu_ids.slice(0,10),
+      // grabs top ten otu_labels for text when hovering
       hovertext: otu_labels.slice(0,10),
+      // displays hovertext when hovering
       hoverinfo: 'hovertext',
       type: 'pie'
     }];
     // Layout for pie chart
     var pieLayout = {
+      // sets top and left margins
       margin: {t: 0, l: 0}
     }
 
     Plotly.plot('pie', pieData, pieLayout); 
-
-    // // Enter a speed between 0 and 180
-    // var level = 175;
-
-    // // Trig to calc meter point
-    // var degrees = 180 - level,
-    //     radius = .5;
-    // var radians = degrees * Math.PI / 180;
-    // var x = radius * Math.cos(radians);
-    // var y = radius * Math.sin(radians);
-
-    // // Path: may have to change to create a better triangle
-    // var mainPath = 'M -.0 -0.025 L .0 0.025 L ',
-    //     pathX = String(x),
-    //     space = ' ',
-    //     pathY = String(y),
-    //     pathEnd = ' Z';
-    // var path = mainPath.concat(pathX,space,pathY,pathEnd);
-
-    // var data = [{ type: 'scatter',
-    //   x: [0], y:[0],
-    //     marker: {size: 28, color:'850000'},
-    //     showlegend: false,
-    //     name: 'speed',
-    //     text: level,
-    //     hoverinfo: 'text+name'},
-    //   { values: [50/6, 50/6, 50/6, 50/6, 50/6, 50/6, 50],
-    //   rotation: 90,
-    //   text: ['TOO FAST!', 'Pretty Fast', 'Fast', 'Average',
-    //             'Slow', 'Super Slow', ''],
-    //   textinfo: 'text',
-    //   textposition:'inside',
-    //   marker: {colors:['rgba(14, 127, 0, .5)', 'rgba(110, 154, 22, .5)',
-    //                         'rgba(170, 202, 42, .5)', 'rgba(202, 209, 95, .5)',
-    //                         'rgba(210, 206, 145, .5)', 'rgba(232, 226, 202, .5)',
-    //                         'rgba(255, 255, 255, 0)']},
-    //   labels: ['151-180', '121-150', '91-120', '61-90', '31-60', '0-30', ''],
-    //   hoverinfo: 'label',
-    //   hole: .5,
-    //   type: 'pie',
-    //   showlegend: false
-    // }];
-
-    // var layout = {
-    //   shapes:[{
-    //       type: 'path',
-    //       path: path,
-    //       fillcolor: '850000',
-    //       line: {
-    //         color: '850000'
-    //       }
-    //     }],
-    //   title: '<b>Belly Button Washing Frequency</b> <br> Scrubs per Week',
-    //   height: 1000,
-    //   width: 1000,
-    //   xaxis: {zeroline:false, showticklabels:false,
-    //             showgrid: false, range: [-1, 1]},
-    //   yaxis: {zeroline:false, showticklabels:false,
-    //             showgrid: false, range: [-1, 1]}
-    // };
-
-    // Plotly.plot('myDiv', data, layout);
 
   })
 }

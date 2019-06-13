@@ -48,7 +48,6 @@ Link to Heroku app: https://infinitebellybuttons.herokuapp.com/
 
 - - -
 
-***
 # Still under construction...
 ## Advanced Challenge Assignment (Optional)
 

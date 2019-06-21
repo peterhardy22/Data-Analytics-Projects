@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+#graph {
+  border-radius: 8px;
+}
+
+.chart::before {
+  position: absolute;
+  top: 75px;
+  left: 300px;
+  z-index: -1;
+  display: block;
+  width: 400px;
+  height: 300px;
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.tooltip {
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  padding: 3px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.750);
+  border-radius: 10px;
+}
+
+.axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: black;
+  text-anchor: middle;
+  padding: 2%;
+}
+
+.active {
+  font-weight: bold;
+  fill: #000;
+  fill: black;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive {
+  font-weight: lighter;
+  fill: darkgray;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.inactive:hover {
+  fill: rgb(83, 83, 83);
+  cursor: pointer;
+}
+
+
+/*---Style Overall Webpage --*/
+html, body {
+  height: 100%;
+  width: 100%;
+  /* taken from @import link above, back up font is sans-serif */
+  font-family: 'Poppins', sans-serif;
+  /* give font a color, 222 slightly softer than black */
+  color: #000000;
+  background: #ffffff
+}
+/* referencing all the padding form HTML file */
+.padding {
+  padding-bottom: 2rem;
+}
+
+/*---Style Analysis Section --*/
+.welcome {
+  /* condenses welcome row */
+  width: 75%;
+  /* centers welcome row */
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+/* stylizes horizontal line */
+.welcome hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 50%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.display-4 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: coral;
+  text-shadow: #474747 1px 1px 1px;
+  padding-top: 2%;
+}

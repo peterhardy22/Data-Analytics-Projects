@@ -35,10 +35,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[13 - Reporting Aliens With Javascript](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/13%20-%20Reporting%20Aliens%20With%20Javascript)
 
 &nbsp;&nbsp;&nbsp;&nbsp;[14 - Plotly Belly Button Biodiversity](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/14%20-%20Plotly%20Belly%20Button%20Biodiversity)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[15 - D3 Data Journalism](https://github.com/peterhardy22/Data-Analytics-Projects/blob/master/15%20-%20D3%20Data%20Journalism/README.md)
 	
 #### Still under construction...
 	
 &nbsp;&nbsp;&nbsp;&nbsp;[10 - Web of Weather](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/10%20-%20Weather%20on%20the%20Web)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[16 - Mapping Earthquakes](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/16%20-%20Mapping%20Earthquakes)
 
 ***
 Enjoy!

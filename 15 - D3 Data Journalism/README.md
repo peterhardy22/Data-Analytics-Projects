@@ -24,6 +24,7 @@ The scatter plot represents each state with circle elements. This graphic was co
 
 - - -
 
+# Still under construction...
 ### Level 2: Impress the Boss (Optional Challenge Assignment)
 
 Why make a static graphic when D3 lets you interact with your data?

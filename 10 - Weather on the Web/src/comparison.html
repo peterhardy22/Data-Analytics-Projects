@@ -1,135 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Comparisons</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/style.css">
-  <!-- Awesome Fonts - Media Symbols-->
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Stylish" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<body>
-  <header>
-    <!-- NavBar -->
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">
-            <strong>Home</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <div class="dropdown">
-                        <a style= "color:rgba(0,0,0,0.6)" class="nav-link">Plots</a>
-                        <div class="dropdown-content">
-                            <a style= "color:rgba(0,0,0,0.6)" href="../src/max_temp.html">Max Temperature</a>
-                            <a style= "color:rgba(0,0,0,0.6)" href="../src/humidity.html">Humidity</a>
-                            <a style= "color:rgba(0,0,0,0.6)" href="../src/cloudiness.html">Cloudiness</a>
-                            <a style= "color:rgba(0,0,0,0.6)" href="../src/wind_speed.html">Wind Speed</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style= "color:rgba(0, 0, 0, 0.6)" href="../src/comparison.html">Comparison<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style= "color:rgba(0,0,0,0.6)" href="../src/data.html">Data<span class="sr-only">(current)</span></a>
-                </li>
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Weather Home</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="max_temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="#windspeed">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
             </ul>
+          </div><!-- /.navbar-collapse -->
         </div>
-      </nav>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <article class="description-content row">
+        <div class="col-xs-12">
+          <h1 class="description-header">Latitude vs. Weather Condition</h1>
+          <hr class="description-hr"/>
+          <p class="description-text" align="center">Click any plot to get an in-depth analysis.</p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Max Temperature</h2>
+          <a><img src="../assests/city_lat_max_temp.png" alt="Latitude vs. Max Temperature" class="comparison-image img-responsive" id="maxtemp"></a>
+          <p>As expected the temperature seems to be at its highest the closer to the equator that a city is located.
+            As a city starts to move farther away from the equator, cities on average tend to become less warm. The fact that the southern
+            hemisphere (lat under 0) are on average slightly warmer than northern hemisphere (lat over 0) cities based on the tilt of the 
+            earth. during this time of year the southern part of the earth is closer to the sun, hence warmer temperatures.
+          </p>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Humidity</h2>
+          <a><img src="../assests/city_lat_hum.png" alt="Latitude vs. Humidity" class="comparison-image img-responsive" id="humidity"></a>
+          <p>This plot helps show that humidity is somewhat undertermined by a cities latitude. Across the earth humidity seems to vary
+            for reason other than latitude. Based on the graph it does appear northern hemisphere cities are slightly more likely to be humid,
+            however the data is somewhat spread. What you could draw as a conclusion is that most cities around the world generaly live in at least
+            60% humidity.
+          </p>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Cloudiness</h2>
+          <a><img src="../assests/city_lat_cloudiness.png" alt="Latitude vs. Cloudiness" class="comparison-image img-responsive" id="cloudiness"></a>
+          <p>Like the graph on humidity, this graph for how cloudiness is effected by a cities latitude is completely evenly spread.
+            Clouds show to have no effect based on a cities latitude. What causes cloudniess is definitely connected to other variables besides 
+            a cities latitude. 
+          </p>
+          <hr class="visible-xs visible-sm">
+        </div>
+        <div class="col-md-6">
+          <h2 class="comparison-header">Wind Speed</h2>
+          <a><img src="../assests/city_lat_wind_speed.png" alt="Latitude vs. Wind Speed" class="comparison-image img-responsive" id="windspeed"></a>
+          <p>Wind speed seems to show the opposite of the humidity chart in that most cities seem to have relatively low wind speeds.
+            Again, we cannot draw the conclusion that a cities latitude effects its windiness. Other factors are definitely at play for 
+            creating windiness in a city.
+          </p>
+        </div>
+      </article>
     </div>
-  </header>
+    <!-- End of container  -->
 
-  <div class="container">
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Peter Phelps Hardy 2019
+      </p>
+    </footer>
+    <!-- End of footer -->
 
-    <div class="jumbotron">
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-12">
-               <h2>Visualizations</h2>
-               <p class="card-text text-black lead mb-5">This page shows all the visualizations at once for a better overall comparison
-                of the data that was collected and organized.</p>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col-md-6 col-xs-12">
-              <h4>Latitude Vs. Max Temperature</h4>
-              <a href="../src/max_temp.html"><img class="img img-responsive center-block" src="../assests/city_lat_max_temp.png" 
-              width="375px" height="300px" alt="max_temp" title= "City Latitude Vs Temperature"
-              style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
-              <p>As expected the temperature seems to be at its highest the closer to the equator that a city is located.
-               As a city starts to move farther away from the equator, cities on average tend to become less warm. The fact that the southern
-               hemisphere (lat under 0) are on average slightly warmer than northern hemisphere (lat over 0) cities based on the tilt of the 
-               earth. during this time of year the southern part of the earth is closer to the sun, hence warmer temperatures.
-              </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <h4>Latitude Vs. Humidity</h4>
-              <a href="../src/humidity.html"> <img class= "img img-responsive center-block" src="../assests/city_lat_hum.png" 
-              width="375px" height="300px" alt="hum" title= "City Latitude Vs Humidity"
-              style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
-              <p>This plot helps show that humidity is somewhat undertermined by a cities latitude. Across the earth humidity seems to vary
-               for reason other than latitude. Based on the graph it does appear northern hemisphere cities are slightly more likely to be humid,
-              however the data is somewhat spread. What you could draw as a conclusion is that most cities around the world generaly live in at least
-              60% humidity.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 col-xs-12">
-              <h4>Latitude Vs. Cloudiness</h4>
-              <a href="../src/cloudiness.html"> <img class="img img-responsive center-block" src="../assests/city_lat_cloudiness.png"
-              width="375px" height="300px" alt="cloud" title= "City Latitude Vs Cloudiness"
-              style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
-              <p>Like the graph on humidity, this graph for how cloudiness is effected by a cities latitude is completely evenly spread.
-               Clouds show to have no effect based on a cities latitude. What causes cloudniess is definitely connected to other variables besides 
-               a cities latitude. 
-               </p>
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <h4>Latitude Vs. Wind Speed</h4>
-              <a href="../src/wind_speed.html""> <img class="img img-responsive center-block" src="../assests/city_lat_wind_speed.png"
-              width="375px" height="300px" alt="wind" title= "City Latitude Vs Wind Speed"
-              style= "margin:20px 10px 0px 10px; 1px; padding: 1px"/></a>
-              <p>Wind speed seems to show the opposite of the humidity chart in that most cities seem to have relatively low wind speeds.
-               Again, we cannot draw the conclusion that a cities latitude effects its windiness. Other factors are definitely at play for 
-               creating windiness in a city.
-               </p>
-            </div>
-          </div>  
-        </div>   
-      </div>   
-    </div>
-  </div>
-
-  <div class="container">
-    <div class= "row">
-      <div class="col-12">
-        <footer>
-          <div class="footer">Copyright &copy; Peter Hardy 2019.</div>
-        </footer>
-      </div>
-    </div>
-  </div>
-</body>
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
-

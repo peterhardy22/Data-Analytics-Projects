@@ -27,6 +27,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[08 - Sakila Search](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/08%20-%20Sakila%20Search)
 	
 &nbsp;&nbsp;&nbsp;&nbsp;[09 - Hawaii Trip With Flask](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/09%20-%20Hawaii%20Trip%20With%20Flask)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[10 - Web of Weather](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/10%20-%20Weather%20on%20the%20Web)
 	
 &nbsp;&nbsp;&nbsp;&nbsp;[11 - Collecting Contemporary Artists](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/11%20-%20Collecting%20Contemporary%20Artists)
 
@@ -36,13 +38,13 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;[14 - Plotly Belly Button Biodiversity](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/14%20-%20Plotly%20Belly%20Button%20Biodiversity)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[15 - D3 Data Journalism](https://github.com/peterhardy22/Data-Analytics-Projects/blob/master/15%20-%20D3%20Data%20Journalism/README.md)
+&nbsp;&nbsp;&nbsp;&nbsp;[15 - D3 Data Journalism](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/15%20-%20D3%20Data%20Journalism)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[16 - Mapping Earthquakes](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/16%20-%20Mapping%20Earthquakes)
 	
 #### Still under construction...
 	
-&nbsp;&nbsp;&nbsp;&nbsp;[10 - Web of Weather](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/10%20-%20Weather%20on%20the%20Web)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[16 - Mapping Earthquakes](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/16%20-%20Mapping%20Earthquakes)
+&nbsp;&nbsp;&nbsp;&nbsp;[17 - Machine Learning Planets](https://github.com/peterhardy22/Data-Analytics-Projects/tree/master/17%20-%20Machine%20Learning%20Planets)
 
 ***
 Enjoy!

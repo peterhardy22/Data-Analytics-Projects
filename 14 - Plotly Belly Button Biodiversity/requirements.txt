@@ -19,6 +19,6 @@ python-dateutil==2.7.3
 pytz==2018.5
 six==1.11.0
 SQLAlchemy==1.2.12
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wincertstore==0.2
 wrapt==1.10.11
